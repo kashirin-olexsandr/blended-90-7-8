@@ -92,6 +92,7 @@ ol {
 .nav-link {
 }
 
+
 /*about*/
 .about {
   background: var(--color-green);
@@ -143,3 +144,36 @@ ol {
   background: var(--color-white);
   color: var(--color-green);
 }
+
+.hero {
+  background-image: url(../images/hero/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 279px;
+  padding-bottom: 282px;
+}
+.hero-container {
+  text-align: center;
+}
+.hero-title {
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 1.2;
+  color: #e9e9e9;
+  margin-bottom: 24px;
+}
+.hero-text {
+  font-size: 22px;
+  line-height: 1.67;
+  color: #e9e9e9;
+  margin-bottom: 32px;
+}
+.hero-btn {
+  font-size: 22px;
+  line-height: 1.67;
+  color: #e9e9e9;
+  background-color: #28a745;
+  border-radius: 5px;
+  padding: 9px 28px 10px 30px;
+}
+
