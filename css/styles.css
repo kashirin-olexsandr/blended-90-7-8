@@ -1,9 +1,12 @@
-/* :root {
-
-} */
+:root {
+  --color-white: #fff;
+  --color-green: #28A745;
+}
 
 body {
   font-family: "Open sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
 }
 
 p,
@@ -22,6 +25,12 @@ ol {
   padding: 0;
 }
 
+.h2 {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+}
+
 .container {
   width: 1360px;
   margin: 0 auto;
@@ -34,7 +43,9 @@ ol {
 .link {
   text-decoration: none;
 }
-
+.test {
+  background: black;
+}
 .header {
   background-color: #715858;
 }
@@ -80,6 +91,60 @@ ol {
 }
 .nav-link {
 }
+
+
+/*about*/
+.about {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about-block {
+  width: 50%;
+}
+.about-content {
+  padding: 80px 64px 80px 20px
+}
+.about-image {
+  height: 100%;
+}
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-content__subtitle {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--color-white);
+}
+.about-content__title {
+  margin-bottom: 24px;
+}
+.about-content__text {
+  margin-bottom: 24px;
+  line-height: 1.56;
+}
+
+.about-content button {
+  color: var(--color-white);
+  background: transparent;
+  padding: 12px 35px;
+  border-radius: 5px;
+  border: 1px solid var(--color-white);
+  cursor: pointer;
+}
+.about-content button:hover {
+  background: var(--color-white);
+  color: var(--color-green);
+}
+
 .hero {
   background-image: url(../images/hero/hero-bg.jpg);
   background-repeat: no-repeat;
@@ -111,3 +176,4 @@ ol {
   border-radius: 5px;
   padding: 9px 28px 10px 30px;
 }
+
