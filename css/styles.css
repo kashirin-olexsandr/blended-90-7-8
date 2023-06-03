@@ -1,12 +1,19 @@
 :root {
   --color-white: #fff;
   --color-green: #28a745;
+  --color-text: #333333;
 }
 
 body {
   font-family: "Open sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 p,
@@ -23,6 +30,10 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+}
+
+img {
+  display: block;
 }
 
 .h2 {
@@ -188,4 +199,78 @@ ol {
   background-color: #28a745;
   border-radius: 5px;
   padding: 9px 28px 10px 30px;
+}
+.team {
+  text-align: center;
+}
+.team .container {
+  padding: 0 30px;
+}
+.team-subtitle {
+  font-size: 20px;
+  line-height: 1.65;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+.team-title {
+  font-weight: 300;
+  font-size: 38px;
+  line-height: 1.26;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+.team-text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--color-text);
+  margin-bottom: 24px;
+}
+.team-list {
+  display: flex;
+  gap: 20px;
+}
+.list {
+}
+.team-list-item {
+  flex-basis: calc((100% - 40px) / 3);
+}
+.team-item-wrap {
+  padding: 20px 0;
+}
+.team-item-title {
+  font-size: 25px;
+  line-height: 1.27;
+  color: var(--color-text);
+  margin-bottom: 12px;
+}
+.team-item-text {
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--color-text);
+}
+.team-img-wrap {
+  position: relative;
+  scale: 1;
+  transition: scale 250ms linear;
+}
+
+.team-img-wrap .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 250ms linear, visibility 250ms linear;
+}
+
+.team-img-wrap:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.team-img-wrap:hover {
+  scale: 1.03;
 }
