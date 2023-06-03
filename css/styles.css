@@ -1,6 +1,6 @@
 :root {
   --color-white: #fff;
-  --color-green: #28A745;
+  --color-green: #28a745;
 }
 
 body {
@@ -46,8 +46,16 @@ ol {
 .test {
   background: black;
 }
+
 .header {
-  background-color: #715858;
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
+  padding: 20px 0;
 }
 
 .header .container {
@@ -92,7 +100,6 @@ ol {
 .nav-link {
 }
 
-
 /*about*/
 .about {
   background: var(--color-green);
@@ -107,7 +114,7 @@ ol {
   width: 50%;
 }
 .about-content {
-  padding: 80px 64px 80px 20px
+  padding: 80px 64px 80px 20px;
 }
 .about-image {
   height: 100%;
@@ -146,7 +153,13 @@ ol {
 }
 
 .hero {
-  background-image: url(../images/hero/hero-bg.jpg);
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../images/hero/hero-bg.jpg);
+
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 279px;
@@ -176,4 +189,3 @@ ol {
   border-radius: 5px;
   padding: 9px 28px 10px 30px;
 }
-
