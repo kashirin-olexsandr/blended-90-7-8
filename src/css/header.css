@@ -1,21 +1,53 @@
 .header {
+  position: fixed;
+  width: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  );
   padding: 20px 0;
 }
 
-.nav-list {
+.header .container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  padding: 0 28px;
+  background: transparent;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.21;
+  /* identical to box height, or 121% */
+
+  color: #ffffff;
+}
+
+.logo-part {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 1.21;
+  /* identical to box height, or 121% */
+  color: #28a745;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: flex;
   gap: 40px;
 }
 
-.nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+.nav-item {
+  font-size: 18px;
+  line-height: 1.56;
+  /* identical to box height, or 156% */
+  color: #ffffff;
 }
-
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.nav-link {
 }
